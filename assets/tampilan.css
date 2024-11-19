@@ -8,24 +8,28 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 
     margin: 0;
     padding: 0;
 }
 
 h2 {
-    color: #7AB2D3;
+    color: #B9E5E8;
 }
 
 h3 {
-    color: #62aad3;
+    color: #DFF2EB;
+}
+
+article h2,article h3 {
+    color: #4A628A;
 }
 
 footer {
     clear: both;
     padding: 40px;
-    color: white;
+    color: #B9E5E8;
     background-color: #4A628A;
     text-align: center;
     font-weight: bold;
@@ -33,10 +37,10 @@ footer {
 
 nav a {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
 
-    color:white;
+    color:#4A628A;
 }
 
 nav a:hover {
@@ -44,7 +48,9 @@ nav a:hover {
 }
 
 .socialmedia {
+    background-color: #7AB2D3;
     text-align: center;
+    
 }
 
 .foto1 {
@@ -69,7 +75,7 @@ nav a:hover {
     padding: 60px;
     background-color: #4A628A;
     text-align: center;
-    color: white;
+    color: #B9E5E8;
 }
 
 nav li {
@@ -79,7 +85,7 @@ nav li {
 }
 
 nav {
-    background-color: #393782;
+    background-color: #7AB2D3;
     padding: 5px;
 
     position: sticky;
@@ -113,10 +119,10 @@ header {
 } 
 
 figure a {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     text-decoration: none;
-    color:#7AB2D3;
+    color:#4A628A;
 }
 
 figure a:hover {
@@ -124,23 +130,17 @@ figure a:hover {
 }
 
 
-@media screen and (max-width: 1200px) {
-    main {
-        flex-flow: column nowrap;
-    }
-
-    main aside {
-        align-self: center;
-    }
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+      }
+   .gambardummy {
+    width: 100%;
+    max-height: 450px;
+    object-fit:cover;
+    object-position: center;
+    border-radius: 5%;
+   }
 }
 
-@media screen and (max-width: 768px) {
-    nav ul {
-        justify-content: center;
-    }
-    
-    main aside {
-        align-self: stretch;
-    }
-    
-}
